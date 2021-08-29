@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title>formulario</title>
+	<style type="text/css">
+		*{font-family: Arial;}
+		h1{text-align: center; 
+			font-size:1.2em;
+			text-decoration: underline;}
+			form{text-align: center;}
+
+			div{border-style:solid;
+				border-color:green;
+				border-width: 0.2em;
+				margin-top: 2em;
+				margin-left: 10em;
+				margin-right: 10em;}
+			</style>
+		</head>
+		<body>
+			<body bgcolor="green">
+
+
+			<br>
+			<h1>LLenar el siguiente formulario</h1>
+			<h1>Para reservar matricula</h1>
+			<br>
+			<form name="formulario">
+
+				<spam>Nombre</spam><input type="text" id="nombre"
+				placerholder="primer nombre"maxlength="15">
+				<br>
+				<br>
+
+				<spam>Apellido</spam> <input type="text" id="apell"
+				placerholder="primer apellido"maxlength="15">
+				<br>
+				<br>
+				<spam>Id</spam> <input type="text" id="id"
+				placerholder="#de identidad" maxlength="15">
+				<br>
+				<br>
+				<spam>sexo:</spam>
+				<spam>Femenino</spam><input type="radio" id="femenino">
+				<spam>Masculino</spam><input type="radio" id="masculino">
+				<br>
+				<br>
+				<input type="button" onclick="activar()" value="enviar">
+			</form>
+			<script>
+				function activar(){
+					var nomb=document.getElementByld("nombre").value;
+					if(nomb=="")
+						{alert("Escriba el nombre");return;}
+					var apelli=document.getElementByld("apell").value;
+					if(apelli=="")
+						{alert("Escriba el apellido");return;}
+					var apelli=document.getElementByld("apell").value;
+					if(apelli=="")
+						{alert("Escriba su numero de identidad");return;}
+					var sex=document.getElementByld("femenino");
+					var sex=document.getElementByld("masculino");
+					if((!sex.checked) &&(!sexm.checked))
+						{aler("Seleccionar tipo de sexo");
+					return;}
+					
+
+				}
+			</script>
+			<center>
+				<li><a href="index.html">Pagina principal</a>
+		</body>
+		</html>
+
+
+
+				
+
+
+
+
+
+			
